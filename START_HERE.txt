@@ -1,0 +1,9 @@
+RARA KITCHEN STUDIO — V55
+
+1. Extract the entire ZIP folder.
+2. Keep all files and folders together.
+3. Double-click index.html to preview the site locally.
+4. Do NOT open HTML while it is still inside the ZIP.
+5. Homepage event cards now use the new Corporate and Diplomatic & Private images.
+6. Internal navigation and CTA links are wired between the site pages.
+7. External social links open in a new tab.
