@@ -25,21 +25,13 @@
 .clients-head h2 span{color:var(--red)}
 .clients-head p{color:var(--muted);font-size:17px;line-height:1.7;margin:0}
 .clients-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.client-card{min-height:118px;border:1px solid var(--line);border-radius:8px;background:#faf8f4;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.client-card{min-height:150px;border:1px solid var(--line);border-radius:8px;background:#faf8f4;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px 18px;gap:13px;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
 .client-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.07);background:#fff}
-.client-logo{max-width:100%;max-height:52px;object-fit:contain;filter:grayscale(1);opacity:.86}
-.client-name{font-size:16px;line-height:1.2;font-weight:700;letter-spacing:.02em;color:#262321}
-.client-name.small{font-size:13px;letter-spacing:.06em;text-transform:uppercase}
-.client-name.serif{font-family:Georgia,"Times New Roman",serif;font-size:22px;font-weight:500}
+.client-logo{width:78px;height:48px;max-width:100%;object-fit:contain;display:block;filter:none;opacity:1}
+.client-name{font-size:15px;line-height:1.25;font-weight:700;letter-spacing:.01em;color:#262321}
 .client-note{margin:30px auto 0;text-align:center;color:#8a837b;font-size:13px;letter-spacing:.04em}
-@media(max-width:900px){.clients-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.clients-section{padding:70px 0}.clients-grid{grid-template-columns:repeat(2,1fr);gap:10px}.client-card{min-height:100px;padding:16px}.client-name{font-size:14px}.client-name.serif{font-size:18px}}
-
-.client-government{min-height:122px;gap:12px;justify-content:flex-start;text-align:left;padding:22px 28px;background:#fff}
-.client-government .client-mark{width:42px;height:42px;flex:0 0 42px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em}
-.client-government .client-name{font-size:17px;letter-spacing:0}
-@media(max-width:900px){.clients-grid{grid-template-columns:repeat(2,1fr)}.client-government{justify-content:center;text-align:center;flex-direction:column;padding:18px;gap:8px}.client-government .client-mark{width:38px;height:38px;flex-basis:38px}}
-@media(max-width:560px){.clients-grid{grid-template-columns:1fr 1fr}.client-government{min-height:126px}.client-government .client-name{font-size:13px}}
+@media(max-width:900px){.clients-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.clients-section{padding:70px 0}.clients-grid{grid-template-columns:1fr 1fr;gap:10px}.client-card{min-height:135px;padding:16px 10px;gap:9px}.client-logo{width:68px;height:42px}.client-name{font-size:13px}}
 </style>
 
 </head><body>
@@ -101,18 +93,36 @@
     </div>
 
     <div class="clients-grid">
-      <div class="client-card client-government"><div class="client-mark">AU</div><div class="client-name small">Australian<br>High Commission</div></div>
-      <div class="client-card client-government"><div class="client-mark">CA</div><div class="client-name small">Canadian High Commission</div></div>
-      <div class="client-card client-government"><div class="client-mark">NO</div><div class="client-name small">Embassy of Norway</div></div>
-      <div class="client-card client-government"><div class="client-mark">BR</div><div class="client-name small">Embassy of Brazil</div></div>
-      <div class="client-card client-government"><div class="client-mark">BE</div><div class="client-name small">Embassy of Belgium</div></div>
-      <div class="client-card client-government"><div class="client-mark">US</div><div class="client-name small">Embassy of the United<br>States</div></div>
-      <div class="client-card client-government"><div class="client-mark">CL</div><div class="client-name small">Embassy of Chile</div></div>
-      <div class="client-card client-government"><div class="client-mark">TR</div><div class="client-name small">Embassy of Turkey</div></div>
-      <div class="client-card client-government"><div class="client-mark">GB</div><div class="client-name small">British Embassy</div></div>
-      <div class="client-card client-government"><div class="client-mark">FI</div><div class="client-name small">Embassy of Finland</div></div>
-      <div class="client-card client-government"><div class="client-mark">LB</div><div class="client-name small">Embassy of Beirut</div></div>
-      <div class="client-card client-government"><div class="client-mark">FI</div><div class="client-name small">Finland Diwali Festival</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/audi" alt="Audi India logo"><div class="client-name">Audi India</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/mercedes" alt="Mercedes-Benz logo"><div class="client-name">Mercedes-Benz</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/bmw" alt="BMW India logo"><div class="client-name">BMW India</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/jaguar" alt="Jaguar logo"><div class="client-name">Jaguar</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/landrover" alt="Land Rover logo"><div class="client-name">Land Rover</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/lamborghini" alt="Lamborghini India logo"><div class="client-name">Lamborghini India</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/triumph" alt="Triumph Motorcycles logo"><div class="client-name">Triumph Motorcycles</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/tata" alt="Tata logo"><div class="client-name">Zoya · Tata</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=ficci.in&amp;sz=128" alt="FICCI logo"><div class="client-name">FICCI</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=delhiartgallery.com&amp;sz=128" alt="Delhi Art Gallery logo"><div class="client-name">Delhi Art Gallery</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=fdci.org&amp;sz=128" alt="Fashion Design Council of India logo"><div class="client-name">Fashion Design Council of India</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/airindia" alt="Air India logo"><div class="client-name">Air India</div></div>
+
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=india.highcommission.gov.au&amp;sz=128" alt="Australian High Commission logo"><div class="client-name">Australian High Commission</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=international.gc.ca&amp;sz=128" alt="Canadian High Commission logo"><div class="client-name">Canadian High Commission</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=norway.no&amp;sz=128" alt="Embassy of Norway logo"><div class="client-name">Embassy of Norway</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=gov.br&amp;sz=128" alt="Embassy of Brazil logo"><div class="client-name">Embassy of Brazil</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=diplomatie.belgium.be&amp;sz=128" alt="Embassy of Belgium logo"><div class="client-name">Embassy of Belgium</div></div>
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/embassy" alt="Embassy mark"><div class="client-name">Embassy of the United States</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=minrel.gob.cl&amp;sz=128" alt="Embassy of Chile logo"><div class="client-name">Embassy of Chile</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=mfa.gov.tr&amp;sz=128" alt="Embassy of Turkey logo"><div class="client-name">Embassy of Turkey</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=gov.uk&amp;sz=128" alt="British Embassy logo"><div class="client-name">British Embassy</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=um.fi&amp;sz=128" alt="Embassy of Finland logo"><div class="client-name">Embassy of Finland</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=lebanonembassyindia.com&amp;sz=128" alt="Embassy of Beirut logo"><div class="client-name">Embassy of Beirut</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=finland.fi&amp;sz=128" alt="Finland Diwali Festival logo"><div class="client-name">Finland Diwali Festival</div></div>
+
+      <div class="client-card"><img class="client-logo" src="https://cdn.simpleicons.org/dlf" alt="DLF logo"><div class="client-name">DLF</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=maxestates.in&amp;sz=128" alt="Max Estates logo"><div class="client-name">Max Estates</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=eldeco.in&amp;sz=128" alt="Eldeco logo"><div class="client-name">Eldeco</div></div>
+      <div class="client-card"><img class="client-logo" src="https://www.google.com/s2/favicons?domain=seniorworld.com&amp;sz=128" alt="Senior Antara logo"><div class="client-name">Senior Antara</div></div>
     </div>
 
     <div class="client-note">Selected clients, institutions and organisations represented across RARA Kitchen Studio's catering and hospitality work.</div>
