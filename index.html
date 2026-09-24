@@ -354,7 +354,7 @@ footer .footer-socials{display:flex;gap:14px;align-items:center;margin-left:auto
   #mobileMenuButton { z-index: 2147483647 !important; }
 }
 </style>
-</head>
+<style>@media(max-width:900px){.site-header .nav.open,.hero-nav.open{display:flex!important;position:fixed!important;top:78px!important;left:0!important;right:0!important;width:100%!important;z-index:99999!important;background:#171515!important;padding:22px 5%!important;flex-direction:column!important;align-items:flex-start!important;gap:18px!important;height:auto!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}.site-header .menu,.mobile-header .menu,.menu{position:relative!important;z-index:100000!important;pointer-events:auto!important}}</style></head>
 <body>
 <main>
 <section class="hero">
@@ -469,4 +469,5 @@ footer .footer-socials{display:flex;gap:14px;align-items:center;margin-left:auto
 </div></footer>
 
 
+<script>document.addEventListener("DOMContentLoaded",function(){var b=document.querySelector(".site-header .menu, .mobile-header .menu, .menu");var n=document.querySelector(".site-header .nav, .hero-nav");if(!b||!n)return;b.addEventListener("click",function(e){e.preventDefault();e.stopPropagation();n.classList.toggle("open");});n.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");});});});</script>
 </body></html>
